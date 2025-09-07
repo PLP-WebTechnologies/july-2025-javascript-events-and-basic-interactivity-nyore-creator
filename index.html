@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Otieno Wycliffe Nyore">
+  <title>Kayoni Graphics and Branding</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1 id="welcome-message">Company Introduction</h1>
+    <p>
+      Kayoni Graphics and Branding is a design, printing, branding, and publishing company.
+      Our goal is to deliver <span class="highlight">quality services</span> with professional outcomes.
+    </p>
+    <!-- Light/Dark mode toggle -->
+    <button id="modeToggle">🌙 Toggle Dark/Light</button>
+  </header>
+
+  <!-- Dropdown Menu -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="#">Services ▾</a>
+        <ul>
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Branding</a></li>
+          <li><a href="#">Printing</a></li>
+        </ul>
+      </li>
+      <li><a href="#contactForm">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Services -->
+  <section class="services">
+  <h2>Services Offered</h2>
+  <div class="services-grid">
+
+    <div class="service-card">
+      <i class="fas fa-paint-brush service-icon"></i>
+      <h3>Graphic Design</h3>
+      <p>Creative and professional designs tailored to your brand identity.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-tags service-icon"></i>
+      <h3>Branding</h3>
+      <ul>
+        <li>Jerseys</li>
+        <li>T-shirts</li>
+        <li>Reflectors</li>
+        <li>Caps</li>
+        <li>Mugs</li>
+        <li>Pens</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-print service-icon"></i>
+      <h3>Design & Printing</h3>
+      <ul>
+        <li>Banners</li>
+        <li>Posters</li>
+        <li>Business Cards</li>
+        <li>Flyers</li>
+        <li>Eulogies</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-book service-icon"></i>
+      <h3>Printing, Perforating & Binding</h3>
+      <ul>
+        <li>Receipt Books</li>
+        <li>Delivery Notebooks</li>
+        <li>Invoice Books</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Gallery -->
+  <section>
+    <h2>Our Work (Images)</h2>
+    <div class="gallery">
+      <img src="images/logo 1.jpg" alt="Graphic Design Sample">
+      <img src="images/logo 2.jpg" alt="Graphic Design Sample">
+      <img src="images/logo 3.jpg" alt="Graphic Design Sample">     
+      <img src="images/logo 4.jpg" alt="Graphic Design Sample">   
+      <img src="images/logo 5.jpg" alt="Graphic Design Sample">
+      <img src="images/AMT.jpg" alt="T-Shirt branding">
+      <img src="images/DEVCON.jpg" alt="T-Shirt branding">
+      <img src="images/B.CARDS.jpg" alt="Business cards">
+      <img src="images/BANNER.jpg" alt="Banner design and printing">
+      <img src="images/STICKER1.jpg" alt="Sticker Design">
+      <img src="images/TAGS.jpg" alt="Tags">
+      <img src="images/REFLECTOR1.jpg" alt="Branded Reflectors">
+      <img src="images/REFLECTOR2.jpg" alt="Branded Reflectors">
+      <img src="images/HOODIE.jpg" alt="Branded Hoodie">
+    </div>
+    <!-- Gallery Navigation -->
+    <div class="gallery-controls">
+      <button id="prevBtn">⟨ Prev</button>
+      <button id="nextBtn">Next ⟩</button>
+    </div>
+  </section>
+
+  <!-- Videos -->
+  <section>
+    <h2>Our Work (Videos)</h2>
+    <video width="400" controls>
+      <source src="videos/KAYONI.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <video width="400" controls>
+      <source src="videos/EMBROIDERY.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <video width="400" controls autoplay muted loop>
+      <source src="videos/jerseys.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Counter Game -->
+  <section id="counter-section">
+    <h2>Fun Counter Game</h2>
+    <p id="counter">0</p>
+    <button id="increase">Increase</button>
+    <button id="decrease">Decrease</button>
+    <button id="reset">Reset</button>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <strong>What services do you offer?</strong>
+      <p class="faq-answer">We offer graphic design, branding, printing, and publishing services.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Where are you located?</strong>
+      <p class="faq-answer">We are located in Homa Bay, Legacy Plaza – 2nd Floor, Door No. 25.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Do you work on weekends?</strong>
+      <p class="faq-answer">We are closed on Saturdays but open on Sundays from 8am - 5pm.</p>
+    </div>
+  </section>
+
+  <!-- Tabs -->
+  <section class="tab-container">
+    <h2>Our Categories</h2>
+    <div class="tab-buttons">
+      <button data-tab="tab1">Design</button>
+      <button data-tab="tab2">Branding</button>
+      <button data-tab="tab3">Printing</button>
+    </div>
+    <div id="tab1" class="tab-content">
+      <p>We create logos, posters, banners, and more!</p>
+    </div>
+    <div id="tab2" class="tab-content">
+      <p>We brand t-shirts, caps, mugs, reflectors, and jerseys.</p>
+    </div>
+    <div id="tab3" class="tab-content">
+      <p>We print business cards, flyers, receipt books, and invoice books.</p>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section>
+    <h2>Location</h2>
+    <p>We are located in Homa Bay, Legacy Plaza – 2nd Floor, Door No. 25</p>
+  </section>
+
+  <!-- Working Days -->
+  <section>
+    <h2>Working Days</h2>
+    <table>
+      <tr><th>Day</th><th>Time</th></tr>
+      <tr><td>Monday</td><td>8am - 5pm</td></tr>
+      <tr><td>Tuesday</td><td>8am - 5pm</td></tr>
+      <tr><td>Wednesday</td><td>8am - 5pm</td></tr>
+      <tr><td>Thursday</td><td>8am - 5pm</td></tr>
+      <tr><td>Friday</td><td>8am - 5pm</td></tr>
+      <tr><td>Saturday</td><td>Closed</td></tr>
+      <tr><td>Sunday</td><td>8am - 5pm</td></tr>
+    </table>
+  </section>
+
+  <!-- Contact Form -->
+  <section>
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="yourname" required><br>
+
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="youremail" required><br>
+
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="yourmessage" rows="6" required></textarea><br>
+
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kayoni Graphics and Branding | All Rights Reserved</p>
+  </footer>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
